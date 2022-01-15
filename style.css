@@ -1,0 +1,436 @@
+
+/* -------Font -------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*------- menu-------*/
+.menu-bar{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.menu-name{
+    padding: 10px;
+    text-decoration: none;
+}
+.menu-text{
+    color: #3d405b;
+}
+.menu-right{
+    margin-top: 35px;
+    margin-right: 30px;
+}
+
+.menu-right a{
+   color: black ;
+}
+/* ----------2nd section----------- */
+
+
+.product{
+    display: flex;
+    overflow: hidden;
+    
+   
+}
+.intro-img{
+   
+    padding-right: 250px;
+    padding-top: 90px;
+
+}
+.product:hover .intro-img{
+    transform:  rotate(-90deg);
+}
+.introduction{
+    padding-left: 290px;
+    padding-top: 70px;
+    padding-right: 100px;
+
+}
+.intro-img img{
+    font-size: 50px;
+     
+    background-image: url("images/shape-5.png") , url("images/shape-4.png");
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+}
+.intro-head{
+    font-size: 70px;
+    color: #3f3a3a;
+}
+.details{
+    font-size: 20px;
+}
+
+
+.btn{
+    background-color:#f72585;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 25px;
+    color: white;
+}
+
+/* ---------------logos part----------- */
+
+
+.svg-part{
+    padding-top: 80px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.logo{
+    padding: 30px;
+}
+.logo-part{
+    padding-left: 80px;
+}
+.horizontal{
+    box-shadow: 0.5px 0.5px gray;
+}
+
+
+/* ---------collection--------- */
+
+
+
+.collection{
+    /* padding: 30px; */
+    
+}
+
+.popular{
+    text-align: center;
+    padding-top: 90px;
+    font-size: 35px;
+    color: #383333;
+    margin-bottom: 50px;
+}
+.sample-1{
+    width: 450px;
+    /* height: 660px; */
+    border: 1px solid gray;
+    box-shadow: 4px 4px 12px gray;
+    border-radius: 5px;
+}
+.sample-1 img{
+    width: 90%;
+    
+    margin-top: 19px;
+    margin-left: 18px;
+  
+}
+.sample-detail{
+    margin-left:20px ;
+}
+.sample-head{
+    font-size: 30px;
+    color: #363434;
+}
+.buyer{
+    font-weight: 20px;
+    font-size: 18px;
+    color: gray
+}
+.star{
+    color:goldenrod
+}
+.rating{
+    margin-left: 8px;
+}
+.product-upload{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    justify-content:space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.see-more{
+    
+    text-decoration: none;
+    color:#f61d7f ;
+    font-size: 20px;
+    float: right;
+    margin-right: 212px; 
+}
+.more {
+    margin-top: 50px;
+}
+ /* -------------Extra section-------------- */
+
+ .photo-frame{
+     width: 300px;
+     height: 200px;
+     transition: .5s all ease-in;
+     margin-left: 200px;
+     margin-top: 30px;
+
+     
+ }
+.photo img{
+    width: 150%;
+    border-radius: 2px;
+
+}
+.photo-detail{
+    display: none;
+   
+   
+}
+.text{
+
+        width: 400px;
+        font-size: 16px;
+        text-align: center;
+        padding: 0px 20px;
+        color: white; 
+    
+}
+
+.photo-frame:hover .photo-detail{
+    display: block;
+    position: relative;
+    width: 300px;
+    bottom: 112%;
+}
+.extra-part{
+    /* margin-bottom: 100px; */
+    margin-left:450px ;
+    margin-top: 150px;
+    
+}
+.gradient{
+    display: flex;
+
+}
+.join{
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+   background-color: #f61d7f;
+   font-size: 20px;
+   color: white;
+}
+
+/* ---------------FOOTER------------ */
+.footer{
+    text-align: center;
+    background-color: black;
+    margin-top: 120px;
+    height: 300px;
+    font-size: 20px;
+    color: white;
+}
+.font-size{
+    padding-top: 30px;
+}
+.social{
+    color: white;
+}
+
+/*--------- media query ---------
+---------------------------------*/
+
+
+
+@media only screen and (max-width:975px) {
+    .menu-bar{
+        font-size: 50px;
+    }
+    .product-upload {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .gradient {
+        display: block;
+    }
+    .photo-frame {
+        width: 100%;
+        height: auto;
+        border: none;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .extra-part {
+        /* margin-bottom: 100px; */
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .photo img {
+        width: 100%;
+    }
+    .sample-1 {
+        width: 100%;
+    }
+    .introduction {
+        padding: 10px;
+    }
+    .intro-head {
+        font-size: 28px;
+    }
+    .product {
+        display: block;
+    }
+    .intro-img img {
+        font-size: 20px;
+    }
+    .intro-img {
+        padding: 10px;
+    }
+    .intro-img img {
+        width: 70%;
+    }
+    .menu-bar {
+        font-size: 20px;
+    }
+    .menu-bar {
+        display: block
+    }
+    .menu-right {
+        margin-top: 0;
+        margin-right: 0;
+        max-width: 240px;
+    }
+
+    .details {
+        font-size: 14px;
+    }
+    .svg-part {
+        padding-top: 80px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .logo-part {
+        padding-left: 0;
+    }
+    .popular {
+        text-align: left;
+        padding-top: 50px;
+        font-size: 25px;
+        color: #383333;
+        margin-bottom: 50px;
+    }
+    .footer {
+        margin-top: 70px;
+    }
+    h1 {
+        display: block;
+        font-size: 2em;
+    }
+    .footer {
+        font-size: 16px;
+        height: 230px;
+        text-align: center;
+        padding-left: 50px;
+    }
+}
+
+
+/* -------------mobile------------ */
+
+@media only screen and (max-width:688px) {
+    .menu-bar{
+        font-size: 50px;
+    }
+    .product-upload {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .gradient {
+        display: block;
+    }
+    .photo-frame {
+        width: 100%;
+        height: auto;
+        border: none;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .extra-part {
+        /* margin-bottom: 100px; */
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .photo img {
+        width: 72%;
+    }
+    .sample-1 {
+        width: 100%; 
+    }
+    .introduction {
+        padding: 10px;
+    }
+    .intro-head {
+        font-size: 28px;
+    }
+    .product {
+        display: block;
+    }
+    .intro-img img {
+        font-size: 20px;
+    }
+    .intro-img {
+        padding: 10px;
+    }
+    .intro-img img {
+        width: 70%;
+    }
+    .menu-bar {
+        font-size: 20px;
+    }
+    .menu-bar {
+        display: block
+    }
+    .menu-right {
+        margin-top: 0;
+        margin-right: 0;
+        max-width: 240px;
+    }
+
+    .details {
+        font-size: 14px;
+    }
+    .svg-part {
+        padding-top: 80px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .logo-part {
+        padding-left: 0;
+    }
+    .popular {
+        text-align: left;
+        padding-top: 50px;
+        font-size: 25px;
+        color: #383333;
+        margin-bottom: 50px;
+    }
+    .footer {
+        margin-top: 70px;
+    }
+    h1 {
+        display: block;
+        font-size: 1.1em;
+    }
+    .footer {
+        font-size: 13px;
+        height: 230px;
+        text-align: left;
+        padding-left: 50px;
+    }
+}
